@@ -1,1 +1,106 @@
-/* You can add global styles to this file, and also import other style files */
+
+
+.title-underline{
+  color: #ffffff;
+  text-align: center;
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
+.btn-blue{
+  background: transparent;
+  display: inline-block;
+  color: #46cbfd;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  border: 3px solid #46cbfd;
+  padding: 10px 15px;
+  transition: background-color 0.3s, color 0.3s;
+
+}
+
+.btn-blue:hover{
+  background-color: #46cbfd;
+  color: #ffffff;
+}
+
+
+.ejem-wrapper{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+
+}
+
+.ejem-item{
+  display: inline-block;
+  width: 31%;
+  margin-left: 1%;
+  margin-right: 1%;
+  background: #ffffff;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.ejem-item-img{
+  width: 100%;
+}
+
+.ejem-item-description{
+  padding: 10px;
+
+}
+
+.ejem-item-description .btn-blue{
+  display: block;
+}
+
+ejem-item-title{
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #46cbfd;
+}
+
+.ejem-item-client{
+
+  font-size: 18px;
+
+}
+
+.ejem-item-client a{
+  text-decoration: none;
+  font-weight: 700;
+  color: #765bf6;
+}
+
+
+.footer{
+  background: #d1d1d1;
+  margin-top: 10px;
+}
+
+.footer-wrapper{
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  text-align: center;
+
+}
+
+.footer-text{
+  font-size: 18px;
+
+}
+
+.footer-text a{
+  color: #765bf6;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.footer-text .icon{
+  color: #de5347;
+}
