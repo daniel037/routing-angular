@@ -1,32 +1,37 @@
 <div>
-    <h1 class="encabezado"> Catalogo de Productos </h1>
+  <h1 class="encabezado"> Catalogo de Productos </h1>
 </div>
 
 <div >
-  <nav class="navbar navbar-light navbar-expand-sm" style="background-color: #03f0fd21">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    
-      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" routerLink="inicio"> INICIO </a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link"  routerLink="/primer"> PRODUCTOS </a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link"  routerLink="/segundo"> INFO </a>
-          </li>
-           
-        </ul>
-          
-      </div>
-  </nav>
+<nav class="navbar navbar-light navbar-expand-sm" style="background-color: #03f0fd21">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="inicio"> INICIO </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link"  routerLink="/productos"> PRODUCTOS </a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link"  routerLink="/login"> INICIAR </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  routerLink="/registro"> REGISTRARSE </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"  routerLink="/informacion"> INFO </a>
+        </li> 
+      </ul>
+        
+    </div>
+</nav>
 </div>
-
-
 <router-outlet></router-outlet>
 
-
+<app-footer></app-footer>
+	

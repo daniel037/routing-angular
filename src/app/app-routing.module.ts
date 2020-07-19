@@ -1,29 +1,31 @@
-import { NgModule } from '@angular/core';
+import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
-import { PrimerComponent } from './primer/primer.component';
-import { SegundoComponent } from './segundo/segundo.component';
+import { HomeComponent } from './home/home.component';
+import { InfoComponent } from './info/info.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { InicioComponent } from './inicio/inicio.component';
-import { ProductoAComponent } from './producto-a/producto-a.component';
-import { ProductoBComponent } from './producto-b/producto-b.component';
-import { ProductoCComponent } from './producto-c/producto-c.component';
-import { CompraComponent } from './compra/compra.component';
+import { ProductosComponent } from './productos/productos.component';
+import { LibrosComponent } from './libros/libros.component';
+import { RevistasComponent } from './revistas/revistas.component';
+import { ComicsComponent } from './comics/comics.component';
+import { LoginComponent } from './login/login.component';
+import { RegistroComponent } from './registro/registro.component';
+import { LoginAdminComponent } from './login-admin/login-admin.component';
 
 
 const routes: Routes = [
-  { path: '', component: InicioComponent},
-  { path: 'inicio', component: InicioComponent},
-  { path: 'primer', component: PrimerComponent, children: [
-    { path: 'producto-a', component: ProductoAComponent},
-    { path: 'producto-b', component: ProductoBComponent},
-    { path: 'producto-c', component: ProductoCComponent}  
-  ] },
-  { path: 'segundo', component: SegundoComponent },
-  { path: 'compra', component: CompraComponent},
-  { path: '**', component: PageNotFoundComponent }
+  {path: '', component: HomeComponent},
+  {path: 'inicio', component: HomeComponent},
+  {path: 'informacion', component: InfoComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'registro', component: RegistroComponent},
+  {path: 'login_admin', component: LoginAdminComponent},
+  {path: 'productos', component: ProductosComponent, children: [
+    {path: 'libros', component: LibrosComponent},
+    {path: 'revistas', component: RevistasComponent},
+    {path: 'comics', component: ComicsComponent}
+  ]},
+  {path: '**', component: PageNotFoundComponent }
 ];
-
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
